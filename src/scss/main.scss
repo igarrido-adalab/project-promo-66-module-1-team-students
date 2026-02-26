@@ -4,5 +4,6 @@
 
 @use "./layout/header";
 @use "./layout/footer";
-
 @use "./layout/contact";
+@use "./components/blog";
+@use "./components/hero";
