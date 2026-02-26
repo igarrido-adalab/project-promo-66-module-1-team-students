@@ -16,16 +16,35 @@
     <h1 class="contact__title"> Contáctanos </h1>
 
     <section class="contact__content">
-
-      <!-- Mapa iframe o img -->
-
+      <!-- Mapa IMAGEN -->
+      <div class="contact__map">
+        <img src="/images/map.png" alt="map">
+      </div>
       <!-- Formulario -->
+      <form class="contact__form" action="https://formspree.io/f/xjgellny" method="POST">
+        <label class="contact__label">
+          Nombre
+          <input class="contact__input" type="text" name="name" required></label>
+
+        <label class="contact__label">
+          Email
+          <input class="contact__input" type="text" name="email" required>
+        </label>
+
+        <label class="contact__label">
+          Mensaje
+          <textarea class="contact__textarea" name="message" required></textarea>
+        </label>
+
+        <button class="contact__buttom" type="submit">
+          Submit
+        </button>
+      </form>
 
     </section>
   </main>
   <!-- Footer -->
   <load src="./partials/footer.html" />
-  </div>
 </body>
 
 </html>
