@@ -7,10 +7,6 @@
     align-items: center;
     padding-inline: 1.5rem;
     padding-block: clamp(1rem, 2vw, 2.5rem);
-
-    @media (width > 1228px) {
-      margin-inline: 6rem;
-    }
   }
 
   &__logo {
@@ -23,7 +19,7 @@
   &__img {
     width: 45px;
 
-    @media (width > 1228px) {
+    @media (width > 768px) {
       width: 70px;
     }
   }
@@ -44,7 +40,7 @@
     background: none;
     border: none;
 
-    @media (width > 1228px) {
+    @media (width > 768px) {
       display: none;
     }
   }
@@ -59,7 +55,7 @@
   &__nav {
     display: none;
 
-    @media (width > 1228px) {
+    @media (width > 768px) {
       display: block;
     }
   }
