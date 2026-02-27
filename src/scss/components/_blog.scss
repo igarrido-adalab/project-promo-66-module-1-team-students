@@ -1,6 +1,42 @@
 .blog {
-    padding-block: 1.5 rem;
-    padding-left: 1.5rem;
-    padding-right: 5rem;
+    width: 100%;
+    padding: 1.5rem;
+    box-sizing: border-box;
 
+}
+
+.blog_card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+
+}
+
+.blog_img {
+
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.blog_title {
+    font: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.blog_text {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.blog_button {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 0.6rem 1.3rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
