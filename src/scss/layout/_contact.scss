@@ -1,14 +1,129 @@
 .contact {
     background-color: var(--white-100);
-    padding: 1.25rem;
-    font-family: var(--font-heading);
+    padding: 1.5rem;
+    font-family: var(--font-text);
+    font-size: 1rem;
+    color: var(--black-100);
 
     &__title {
         text-align: center;
-        font-family: var(--font-text);
-        font-size: 1.25rem;
-        margin-bottom: 1.25rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-family: var(--font-title);
     }
 
-    // continuará
+    &__subtitle {
+        display: none;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__map {
+        width: 100%;
+        height: 220px;
+        margin-bottom: 2rem;
+    }
+
+    &__map-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        font-family: var(--font-text);
+    }
+
+    &__input {
+        height: 2.5rem;
+        border-radius: 0.25rem;
+        border: 1px solid var(--black-50);
+        padding: 0.75rem;
+        font-family: var(--font-text);
+        font-size: 1rem;
+        background-color: var(--white-25);
+    }
+
+    &__textarea {
+        height: 9rem;
+        resize: none;
+        border-radius: 0.25rem;
+        border: 1px solid var(--black-50);
+        padding: 0.75rem;
+        font-family: var(--font-text);
+        font-size: 1rem;
+        background-color: var(--white-25);
+    }
+
+    &__buttom {
+        margin-top: 0.5rem;
+        height: 2.8rem;
+        background-color: var(--black-100);
+        color: var(--white-100);
+        border: none;
+        border-radius: 0.25rem;
+        font-size: 1.25rem;
+        font-family: var(--font-text);
+        cursor: pointer;
+        transition: 0.3 ease;
+
+        &:hover {
+            background-color: var(--green-100);
+        }
+    }
+
+    &__map {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width:768px) {
+    .contact {
+        padding: 3rem 6rem;
+
+        &__title {
+            font-size: 2.5rem;
+        }
+
+        &__subtitle {
+            display: block;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--black-75)
+        }
+
+        &__content {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 3rem;
+        }
+
+        &__form {
+            width: 50%;
+            order: 1;
+        }
+
+        &__map {
+            width: 50%;
+            height: 400px;
+            order: 2;
+        }
+
+    }
 }
