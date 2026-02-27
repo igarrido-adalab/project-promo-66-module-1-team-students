@@ -19,6 +19,7 @@
   }
 
   &__content {
+    flex: 1;
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: var(--white-100);
@@ -45,13 +46,10 @@
     margin-bottom: 2rem;
     color: var(--white-75);
     font-size: 0.938rem;
-
-    @media (width > 768px) {
-      margin-bottom: 2.5rem;
-    }
   }
 
   &__link {
+    display: inline-block;
     padding-inline: 3rem;
     padding-block: 0.75rem;
     background-color: var(--white-100);
@@ -59,12 +57,12 @@
     color: var(--black-100);
     font-size: 1.25rem;
     text-decoration-line: none;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease, color 0.3s ease;
 
     &:hover {
       background-color: var(--black-100);
       color: var(--white-100);
-      transform: translateY(-15px);
+      transform: translateY(-5px);
     }
   }
 
