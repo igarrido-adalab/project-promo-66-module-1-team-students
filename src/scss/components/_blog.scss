@@ -8,14 +8,14 @@
 
 }
 
-.blog_card {
+.blog__card {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-radius: 12px;
 
 }
 
-.blog_img {
+.blog__img {
     width: 100%;
     height: auto;
     display: block;
@@ -23,7 +23,7 @@
 
 }
 
-.blog_title {
+.blog__title {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
@@ -31,7 +31,7 @@
     margin-bottom: 20px;
 }
 
-.blog_text {
+.blog__text {
     font-family: var(--font-text);
     font-weight: 400;
     font-size: 0.93rem;
@@ -40,7 +40,7 @@
     color: var(--black-75);
 }
 
-.blog_button {
+.blog__button {
     font-family: var(--font-text);
     font-weight: 400;
     font-size: 1.25rem;
@@ -61,5 +61,17 @@
     text-decoration: none;
 
 
+    @media (min-width: 768px) {
 
+        .blog {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .blog__img,
+        .blog__card {
+            flex: 0 0 50%
+        }
+    }
 }
