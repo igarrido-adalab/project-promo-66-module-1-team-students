@@ -3,19 +3,17 @@
     &__team {
         padding:2rem;
         text-align: center;
-    }
-    &__team-section {
-       display: flex;
-       flex-direction: column;
-       align-items:center;
-       gap: 1.5rem;
-       margin-top: 2rem;
-         @media (width > 768px) {
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap:2rem;
-          margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        @media (width > 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap:2rem;
+            margin-top: 2rem;
         }
     }
     &__photos {
