@@ -60,18 +60,34 @@
     border-radius: 5px;
     text-decoration: none;
 
+}
 
-    @media (min-width: 768px) {
+@media (min-width: 768px) {
 
-        .blog {
-            display: flex;
-            flex-wrap: wrap;
+    .blog {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
 
-        }
+    .blog__img,
+    .blog__card {
+        flex: 1 1 45%;
+    }
 
-        .blog__img,
-        .blog__card {
-            flex: 0 0 50%
-        }
+    .blog__img--second {
+        order: 4;
+    }
+
+    .blog__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: 2rem;
+    }
+
+    .blog__text {
+        max-height: 420px;
     }
 }
